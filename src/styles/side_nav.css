@@ -1,0 +1,142 @@
+nav{
+    width: 25%;
+    height:99vh;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 1px 10px grey;
+   
+    left: 2%;
+    background-color: #344955;
+    color: white;
+   
+}
+#title{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding:2% 0 8% 0 ;
+
+}#title h1{
+    width: fit-content;
+    border-top: 1px solid ;
+    border-bottom: 1px solid ;
+    text-align: center;
+    padding: 1.5%;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}#title h1::after{
+    width: 100%;
+    content:"Everything news and inbetween ...";
+    position: absolute;
+    top: 110%;
+    color: grey;
+    font-size: 16px;
+    font-family: z003;
+}
+
+
+
+
+
+
+
+
+
+
+#navlinks{
+    height: 65%;
+    width:100% ;
+    display: flex;
+    flex-flow: column;
+    
+}
+#navlinks ul{
+    height: 50%;
+    width:100% ;
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    
+    justify-content: space-between;
+}#navlinks ul h1{
+    padding:3%;
+    position: relative;
+    margin: 0;
+    font-size: 26px;
+    width: 80%;
+   
+}#navlinks ul h1::after{
+    content:" ";
+    background-color: black;
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+   
+}#navlinks ul li{
+    border-left: none;
+    width: 70%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 0 20px 20px 0;
+    transition: all ease-in-out 350ms;
+    }#navlinks ul li:hover{
+    width: 85%;
+    
+}
+
+#gossip_tab{
+    background-color:rgba(33, 133, 208, 1) ;
+    color: rgb(255, 255, 255);
+}
+#entertainment_tab{
+  background-color:rgba(100, 53, 201, 1) ;
+  color: rgb(255, 255, 255);
+}
+
+#world_tab{
+    background-color:rgba(163, 51, 200, 1) ;
+    color: rgb(255, 255, 255);
+}
+
+#news_tab{
+    background-color: rgba(0, 181, 173, 1);
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+#copyrights{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-flow: column;
+    height: 20%;
+}
+.ptags{
+    width: 80%;
+    text-align: center;
+}

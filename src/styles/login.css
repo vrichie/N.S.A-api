@@ -1,0 +1,123 @@
+#login_wrapper{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#form{
+    width: 30%;
+    background-color: white;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 8px 4px 10px grey;
+    flex-flow: column;
+    
+}
+form{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column;
+}
+.input_wrapper{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: fit-content;
+}
+.input_wrapper input{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 5vh;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius:20px ;
+    border-color: grey;
+    outline: none;
+    transition: all ease-in-out 350ms;
+}
+.input_wrapper input:focus-within{
+    border-color: royalblue;
+}
+.input_wrapper label{
+    margin-left:4% ;
+    font-size: 18px;
+    transform: translateY(0px);
+    color: #344955;
+}
+form button{
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #344955;
+    transition: all ease 350ms;
+    border: 1px solid #344955;
+    font-size: 18px;
+}
+
+form button:hover{
+    color:white;
+    background-color: #344955;
+}
+
+#logo_wrapper{
+    width:80%;
+    height: 15%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#logo_wrapper h1{
+    color: #344955;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-bottom: 10px ;
+}#logo_wrapper p{
+    color: rgb(85, 84, 84);
+    font-family: z003;
+}
+
+
+
+
+
+
+#more{
+    width:80%;
+    height: 15%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+#error{
+    border: 1px solid red;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 13px;
+    background-color: rgba(250, 33, 33, 0.747);
+    color: rgba(255, 255, 255, 0.795);
+    transition: all ease-in 500ms;
+}
