@@ -5,7 +5,7 @@ $response=[];
 
 
 
-$select="SELECT * FROM post WHERE category='$cat' ORDER BY id DESC LIMIT 8";
+$select="SELECT * FROM post WHERE category='$cat' ORDER BY id DESC LIMIT 5";
 $results=mysqli_query($conn,$select);
 
 
