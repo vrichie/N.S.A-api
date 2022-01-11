@@ -44,6 +44,20 @@ function get_cards($category){
         $res->summary=$result['summary'];
 
 
+        //get the editors username and pic
+        $cuid=$result['creator_uid'];
+
+
+        $select2="SELECT * FROM editors WHERE Editor_uid='$cuid'";
+        $user=mysqli_query($conn,$select2);
+        $user=mysqli_fetch_assoc($user);
+
+        $res->username=$user['username'];
+        $res->profile=$user['pic'];
+
+
+
+
         
 
     }else{

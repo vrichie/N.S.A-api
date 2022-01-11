@@ -24,6 +24,25 @@ if($category==='all' && $keyword!=''){
             $res->summary=$result['summary'];
             $res->date=$result['date'];
             $res->pic=$result['pic'];
+
+
+
+        //get the editors username and pic
+        $cuid=$result['creator_uid'];
+
+
+        $select2="SELECT * FROM editors WHERE Editor_uid='$cuid'";
+        $user=mysqli_query($conn,$select2);
+        $user=mysqli_fetch_assoc($user);
+
+        $res->username=$user['username'];
+        $res->profile=$user['pic'];
+
+
+
+
+
+
             array_push($response,$res);
         }
     }else{

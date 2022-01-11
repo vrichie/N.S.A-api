@@ -20,6 +20,20 @@ if($result){
         $post->pic=$posts['pic'];
         $post->title=$posts['title'];
 
+        
+        //get the editors username and pic
+        $cuid=$posts['creator_uid'];
+
+
+        $select2="SELECT * FROM editors WHERE Editor_uid='$cuid'";
+        $user=mysqli_query($conn,$select2);
+        $user=mysqli_fetch_assoc($user);
+
+        $post->username=$user['username'];
+        $post->profile=$user['pic'];
+
+
+
         array_push($response,$post);
        
  
