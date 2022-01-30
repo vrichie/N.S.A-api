@@ -9,6 +9,11 @@ $usernamr="root";
 $passcode="";
 $db="newsspace";
 
+// $host="localhost";
+// $usernamr="richkin1";
+// $passcode="lvi;Qe5EG)C610";
+// $db="richkin1_richking";
+
 $conn =new mysqli($host,$usernamr,$passcode,$db);
 
 
